@@ -1,0 +1,152 @@
+.header {
+  width: 100%;
+  background-color: white;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.header-inner {
+  max-width: 1100px;
+  height: 70px;
+  margin: 0 auto;
+  padding: 0 24px;
+
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+  color: #111827;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  margin-left: 40px;
+}
+
+.nav a {
+  color: #374151;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: auto;
+}
+
+.search-button {
+  width: 36px;
+  height: 36px;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.login-button {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 6px;
+  background-color: #2563eb;
+  color: white;
+  cursor: pointer;
+}
+
+/* 영화 목록 전체 영역 */
+.movie-page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 28px 24px 60px;
+}
+
+/* 영화 목록 제목 */
+.page-title {
+  margin: 0 0 20px;
+  font-size: 28px;
+  font-weight: 700;
+  color: #111827;
+}
+
+/* 영화 카드 5개씩 배치 */
+.movie-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 24px 18px;
+}
+
+/* 영화 카드 */
+.movie-card {
+  min-width: 0;
+}
+
+/* 포스터를 감싸는 영역 */
+.poster-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+/* 포스터 */
+.movie-poster {
+  display: block;
+  width: 100%;
+  aspect-ratio: 2 / 3;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* 영화 제목 */
+.movie-title {
+  margin: 8px 0 3px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #111827;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* 개봉일 */
+.movie-date {
+  margin: 0;
+  font-size: 12px;
+  color: #9ca3af;
+}
+
+/* 북마크 버튼 */
+.bookmark-button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+  border-radius: 6px;
+  background-color: rgba(0, 0, 0, 0.65);
+
+  cursor: pointer;
+}
+
+.bookmark-button img {
+  width: 20px;
+  height: 20px;
+}
+
+/* 페이지네이션은 일단 숨김 */
+.pagination {
+  display: none;
+}
